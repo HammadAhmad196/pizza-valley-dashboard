@@ -8,12 +8,12 @@
     "npm": "6.14.8"
   },
   "scripts": {
-    "client-install": "npm install --prefix client",
+    "dashboard-install": "npm install --prefix dashboard",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dashboard": "npm start --prefix dashboard",
+    "dev": "concurrently \"npm run server\" \"npm run dashboard\"",
     "start": "node server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix dashboard && npm run build --prefix dashboard"
   }, 
   "author": "",
   "license": "ISC",
